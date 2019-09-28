@@ -14,6 +14,8 @@ public class Factor {
     private Long id;
     private String name;
     private Double probability;
+    @ManyToOne
+    private Category category;
     private LocalDateTime created;
 
     public String getName() {

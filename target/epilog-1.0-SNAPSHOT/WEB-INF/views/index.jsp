@@ -14,7 +14,9 @@
 
 Strona główna
 
-<a href="/login">link do logowania</a>
+<a href="/logs">dodaj nowy log</a>
+<a href="/factors">dodaj nowy czynnik</a>
+
 
 </body>
 </html>

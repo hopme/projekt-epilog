@@ -20,9 +20,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/epilog");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/epilog?serverTimezone=UTC");
         dataSource.setUsername("root");
-//        dataSource.setPassword();
+        dataSource.setPassword("coderslab");
         return dataSource;
     }
 
