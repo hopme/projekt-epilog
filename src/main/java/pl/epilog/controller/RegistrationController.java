@@ -30,6 +30,7 @@ public class RegistrationController {
 
     @PostMapping
     public String processRegistrationPage(@ModelAttribute("data") @Valid RegistrationFormDTO data, BindingResult result) {
+        System.out.println("POST poszedl!");
         if (result.hasErrors()) {
             return "registration";
         }
