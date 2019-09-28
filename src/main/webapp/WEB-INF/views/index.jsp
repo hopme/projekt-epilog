@@ -14,5 +14,7 @@
 
 Strona główna
 
+<a href="/login">link do logowania</a>
+
 </body>
 </html>
