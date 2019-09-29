@@ -18,6 +18,14 @@ public class Factor {
     private Category category;
     private LocalDateTime created;
 
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
     public String getName() {
         return name;
     }
@@ -45,5 +53,6 @@ public class Factor {
     public void setProbability(Double probability) {
         this.probability = probability;
     }
+
 
 }

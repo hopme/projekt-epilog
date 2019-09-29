@@ -15,4 +15,27 @@ public class Category {
     @OneToMany(mappedBy = "category") // wlasciciel relacji
     private List<Factor> factors;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Factor> getFactors() {
+        return factors;
+    }
+
+    public void setFactors(List<Factor> factors) {
+        this.factors = factors;
+    }
 }

@@ -1,8 +1,11 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: michal
   Date: 28.09.19
-  Time: 11:08
+  Time: 12:04
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,52 +14,33 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Dodaj nowy log</h1>
 
-    <form:form method="post" modelAttribute="data">
-        <p>
-            Wybierz produkty które jadłeś na śniadanie:
-            <form:input path="email" type="email"/>
-            <form:errors path="email"/>
-        </p>
-        <p>
-            Wybierz produkty, które jadłeś na obiad:
-            Hasło: <form:password path="password"/>
-            <form:errors path="password"/>
-        </p>
-        <p>
-            Wybierz produkty, które jadłeś na kolacje:
-            <form:password path="rePassword"/>
-            <form:errors path="rePassword"/>
-        </p>
-        <p>
-            Godzina obudzenia się:
-            <form:input path="firstName"/>
-            <form:errors path="firstName"/>
-        </p>
-        <p>
-            Godzina położenia się spać:
-            <form:input path="lastName"/>
-            <form:errors path="lastName"/>
-        </p>
-        <p>
-            Inne:
-            <form:input path="lastName"/>
-            <form:errors path="lastName"/>
-        </p>
-        <p>
-            Atak:
-            <form:input path="lastName"/>
-            <form:errors path="lastName"/>
-        </p>
-        <p>
-            <input type="submit" value="Zarejestruj"/>
-            <input type="reset" value="Wyczyść"/>
-        </p>
-    </form:form>
+<h1>Dodaj nowy czynnik</h1>
+
+<form:form method="post" modelAttribute="factor">
 
 
+    <label>Kategoria</label>
+    <form:select path="category.id" items="${categories}"
+                 itemValue="id" itemLabel="name"/>
 
+    <%--jesli category name = jedzenie--%>
+    <label>Wpisz składnik diety (np. ziemniaki/kiełbasa/czekolada):</label>
+    <form:input path="name"/>
+    <%--jesli alkohol--%>
+    <label>Dodaj produkt alkoholowy (np. piwo/wódka):</label>
+    <form:input path="name"/>
+    <%--jesli tyton--%>
+    <label>Dodaj produkt tytoniowy (np. cygaro/papierosy):</label>
+    <form:input path="name"/>
+    <%--jesli stresujacy czynnik--%>
+    <label>Dodaj stresujacy czynnik (np. egzamin/spóźnienie)</label>
+    <form:input path="name"/>
+
+   <p>
+        <input type="submit" value="Dodaj"/>
+    </p>
+</form:form>
 
 </body>
 </html>

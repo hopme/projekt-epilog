@@ -1,3 +1,6 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: michal
@@ -16,24 +19,25 @@
 
 <form:form method="post" modelAttribute="factor">
 
-    <label>Nazwa</label>
-    <form:input path="title"/>
+
     <label>Kategoria</label>
-    <form:select path="authors" items="${authors}"
-                 itemValue="id" itemLabel="lastName"/>
+    <form:select path="category.id" items="${categories}"
+                 itemValue="id" itemLabel="name"/>
 
-    <p>
-        Nazwa czynnika:
-        <form:input path="email" type="email"/>
-        <form:errors path="email"/>
-    </p>
-    <p>
-        Kategoria czynnika:
-        <form:input path="email" type="email"/>
-        <form:errors path="email"/>
-    </p>
+    <%--jesli category name = jedzenie--%>
+    <label>Wpisz składnik diety (np. ziemniaki/kiełbasa/czekolada):</label>
+    <form:input path="name"/>
+    <%--jesli alkohol--%>
+    <label>Dodaj produkt alkoholowy (np. piwo/wódka):</label>
+    <form:input path="name"/>
+    <%--jesli tyton--%>
+    <label>Dodaj produkt tytoniowy (np. cygaro/papierosy):</label>
+    <form:input path="name"/>
+    <%--jesli stresujacy czynnik--%>
+    <label>Dodaj stresujacy czynnik (np. egzamin/spóźnienie)</label>
+    <form:input path="name"/>
 
-    <p>
+   <p>
         <input type="submit" value="Dodaj"/>
     </p>
 </form:form>
