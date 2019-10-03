@@ -17,7 +17,7 @@
 
 <h1>Dodaj nowy czynnik</h1>
 
-<form:form method="post" modelAttribute="factor">
+<form:form method="post" modelAttribute="factorData">
 
 
     <label>Kategoria</label>
@@ -27,17 +27,7 @@
     <%--jesli category name = jedzenie--%>
     <label>Wpisz składnik diety (np. ziemniaki/kiełbasa/czekolada):</label>
     <form:input path="name"/>
-    <%--jesli alkohol--%>
-    <label>Dodaj produkt alkoholowy (np. piwo/wódka):</label>
-    <form:input path="name"/>
-    <%--jesli tyton--%>
-    <label>Dodaj produkt tytoniowy (np. cygaro/papierosy):</label>
-    <form:input path="name"/>
-    <%--jesli stresujacy czynnik--%>
-    <label>Dodaj stresujacy czynnik (np. egzamin/spóźnienie)</label>
-    <form:input path="name"/>
-
-   <p>
+    <p>
         <input type="submit" value="Dodaj"/>
     </p>
 </form:form>

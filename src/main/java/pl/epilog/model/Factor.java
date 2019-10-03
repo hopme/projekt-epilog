@@ -3,6 +3,8 @@ package pl.epilog.model;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "factors")
@@ -17,6 +19,9 @@ public class Factor {
     @ManyToOne
     private Category category;
     private LocalDateTime created;
+
+    @ManyToMany(mappedBy = "factors")
+    private List<DayLog> daylogs = new ArrayList<>();
 
     public Category getCategory() {
         return category;

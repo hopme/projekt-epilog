@@ -7,6 +7,7 @@ import java.util.List;
 @Table(name = "categories")
 public class Category {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -14,6 +15,14 @@ public class Category {
     private String name;
     @OneToMany(mappedBy = "category") // wlasciciel relacji
     private List<Factor> factors;
+
+    public Category() {
+    }
+
+    public Category(String name) {
+        this.name = name;
+    }
+
 
     public Long getId() {
         return id;

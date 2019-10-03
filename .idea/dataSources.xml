@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="epilog@localhost" uuid="ab252556-15c1-4d16-a626-4a22e26b2b1f">
+    <data-source source="LOCAL" name="epilog@localhost" uuid="0b8ced45-4b23-4108-a6ee-001f50a6bcb0">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>

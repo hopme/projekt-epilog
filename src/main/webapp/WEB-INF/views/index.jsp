@@ -14,8 +14,8 @@
 
 Strona główna
 
-<a href="/logs">dodaj nowy log</a>
-<a href="/factors">dodaj nowy czynnik</a>
+<a href="/daylog">Moje logi</a>
+<a href="/factors">Czynniki</a>
 
 
 </body>
