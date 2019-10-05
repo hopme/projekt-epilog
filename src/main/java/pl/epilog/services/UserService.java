@@ -41,7 +41,7 @@ public class UserService {
 
     public void addDayLog(String email, @Valid DayLogDTO daylogData) {
         DayLog dayLog = new DayLog();
-        dayLog.setCreated(daylogData.getCreated());
+        dayLog.setCreated(LocalDateTime.now());
         dayLog.setFactors(daylogData.getFactors());
         User user = userRepository.getByEmail(email);
         dayLog.setUser(user);

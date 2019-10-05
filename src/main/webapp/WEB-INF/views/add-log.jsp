@@ -12,20 +12,17 @@
 <form:form method="post" modelAttribute="dayLogData">
     <form:errors path="*"/>
 
-    <label>Kategoria</label>
-
-    <%--jesli category name = jedzenie--%>
     <label>Wybierz z listy wszystkie produkty spożywcze spożywane tego dnia:</label>
     <form:label path="factors">Czynniki: </form:label>
-
-    <form:select path="factors" items="${factors}" multiple="true" itemLabel="name" itemValue="id"/>
-
-    <%--<label>Czy spożywałeś alkohol?</label>--%>
-    <%--<form:select path="factors" items="${factors}" multiple="true" itemLabel="name" itemValue="id"/>--%>
-    <%--<label>Stresujące zdarzenia?</label>--%>
-    <%--<form:select path="factors" items="${stresFactors}" multiple="true" itemLabel="name" itemValue="id"/>--%>
-    <%--<label>Czy tego dnia doszło do ataku?</label>--%>
-    <%--<form:checkbox path="attack"/>--%>
+    <form:select path="factors" items="${foodFactors}" multiple="true" itemLabel="name" itemValue="id"/>
+    <label>Czy spożywałeś alkohol?</label>
+    <form:select path="factors" items="${alcoFactors}" multiple="true" itemLabel="name" itemValue="id"/>
+    <label>Czy spożywałeś wyroby tytoniowe?</label>
+    <form:select path="factors" items="${tabacoFactors}" multiple="true" itemLabel="name" itemValue="id"/>
+    <label>Stresujące zdarzenia?</label>
+    <form:select path="factors" items="${stresFactors}" multiple="true" itemLabel="name" itemValue="id"/>
+    <label>Czy tego dnia doszło do ataku?</label>
+    <form:checkbox path="attack"/>
 
    <p>
         <input type="submit" value="Wyślij"/>

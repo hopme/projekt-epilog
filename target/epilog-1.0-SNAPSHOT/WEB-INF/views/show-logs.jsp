@@ -15,17 +15,17 @@
 
 <table>
     <tr>
-        <th>Id</th>
-        <th>Nazwa</th>
-        <th>Kategoria</th>
-        <th>Data utworzenia</th>
+        <th>Data:</th>
+        <th>Atak:</th>
+        <th>Opcje:</th>
     </tr>
     <c:forEach items="${daylogs}" var="daylog">
         <tr>
-            <td>${daylog.id}</td>
-            <td>${daylog.attack}</td>
             <td>${daylog.created}</td>
-            <td>Edycja loga</td>
+            <td>${daylog.attack}</td>
+             <td>Edycja loga</td>
+            <td><a href="/daylogs/edit-log/${daylog.id}">Edytuj</a><br/>
+                <%--<a href="/books/remove-book/${book.id}">Usuń</a>--%>
         </tr>
     </c:forEach>
 

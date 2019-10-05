@@ -7,9 +7,9 @@
 </head>
 <body>
 
-<h1>Dodaj nowy log dnia</h1>
+<h1>Edytuj log dnia</h1>
 
-<form:form method="post" modelAttribute="dayLogData">
+<form:form method="post" modelAttribute="editedLogData">
     <form:errors path="*"/>
 
     <label>Wybierz z listy wszystkie produkty spożywcze spożywane tego dnia:</label>
