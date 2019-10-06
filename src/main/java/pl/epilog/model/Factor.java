@@ -15,7 +15,9 @@ public class Factor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Double probability;
+
+    @OneToOne
+    private Corelation corelation;
     @ManyToOne
     private Category category;
     private LocalDateTime created;
@@ -51,13 +53,6 @@ public class Factor {
         this.name = name;
     }
 
-    public Double getProbability() {
-        return probability;
-    }
-
-    public void setProbability(Double probability) {
-        this.probability = probability;
-    }
 
 
 }

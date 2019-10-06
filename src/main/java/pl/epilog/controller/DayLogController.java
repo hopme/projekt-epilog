@@ -57,16 +57,16 @@ public class DayLogController {
         return "add-log";
     }
 
-
-    @GetMapping("/edit-log/{logId}")
-    public String prepareEditLogPage(@PathVariable Long logId, Model model) {
-        DayLog dayLog = dayLogRepository.findOne(logId);
-        if (dayLog == null) {
-            return "redirect:/daylogs";
-        }
-        model.addAttribute("editedLogData", dayLog);
-        return "edit-log";
-    }
+//EDYCJA - zrob to jako tabelka z checkboxami - ale na koncu
+//    @GetMapping("/edit-log/{logId}")
+//    public String prepareEditLogPage(@PathVariable Long logId, Model model) {
+//        DayLog dayLog = dayLogRepository.findOne(logId);
+//        if (dayLog == null) {
+//            return "redirect:/daylogs";
+//        }
+//        model.addAttribute("editedLogData", dayLog);
+//        return "edit-log";
+//    }
 
 
 //    @GetMapping("/remove-book/{bookId}")
