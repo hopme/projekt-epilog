@@ -28,6 +28,8 @@ public class CorrelationService {
         this.correlationRepository = correlationRepository;
     }
 
+
+
     public void update(User user) {
 
         List<DayLog> dayLogs = dayLogRepository.findAllByUser(user);
@@ -85,6 +87,10 @@ public class CorrelationService {
             correlation.setCorrelationMeasure(correlationMeasure);
             correlation.setUser(user);
             correlation.setCreated(LocalDateTime.now());
+
+
+            Correlation previousCorrelationItem = correlationRepository.findFirstByFactorIdAndUserId(f.getId(), user.getId());
+            deletePreviousCorrelation(user, previousCorrelationItem);
             correlationRepository.save(correlation);
 
         }
@@ -109,4 +115,10 @@ public class CorrelationService {
                         (noAttackNoFactor + attackNoFactor));
 
     }
+
+    private void deletePreviousCorrelation(User user, Correlation previousCorrelation) {
+        long previousCorrelationItemId = previousCorrelation.getId();
+        correlationRepository.delete(previousCorrelationItemId);
+    }
+
 }

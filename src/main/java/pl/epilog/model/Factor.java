@@ -16,8 +16,8 @@ public class Factor {
     private Long id;
     private String name;
 
-    @OneToOne
-    private Correlation correlation;
+    @OneToMany
+    private List<Correlation> correlation;
     @ManyToOne
     private Category category;
     private LocalDateTime created;
@@ -53,6 +53,19 @@ public class Factor {
         this.name = name;
     }
 
+    public List<Correlation> getCorrelation() {
+        return correlation;
+    }
 
+    public void setCorrelation(List<Correlation> correlation) {
+        this.correlation = correlation;
+    }
 
+    public List<DayLog> getDaylogs() {
+        return daylogs;
+    }
+
+    public void setDaylogs(List<DayLog> daylogs) {
+        this.daylogs = daylogs;
+    }
 }

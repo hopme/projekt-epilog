@@ -12,6 +12,10 @@
 <form:form method="post" modelAttribute="dayLogData">
     <form:errors path="*"/>
 
+    <%--date picker dodaj!--%>
+    <%--<label>Wybierz dzieńL</label>--%>
+    <%--<form:select path="created" --%>
+
     <label>Wybierz z listy wszystkie produkty spożywcze spożywane tego dnia:</label>
     <form:label path="factors">Czynniki: </form:label>
     <form:select path="factors" items="${foodFactors}" multiple="true" itemLabel="name" itemValue="id"/>

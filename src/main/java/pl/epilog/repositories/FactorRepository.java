@@ -12,4 +12,5 @@ public interface FactorRepository extends JpaRepository<Factor, Long> {
     Factor findById(Long id);
 
 
+
 }

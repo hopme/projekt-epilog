@@ -14,6 +14,8 @@
 
 Strona główna
 
+
+<a href="/cockpit">Moje logi</a>
 <a href="/daylog">Moje logi</a>
 <a href="/factors">Czynniki</a>
 

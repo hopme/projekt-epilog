@@ -13,7 +13,6 @@ import pl.epilog.repositories.FactorRepository;
 import pl.epilog.services.UserService;
 
 import javax.validation.Valid;
-import java.awt.print.Book;
 import java.security.Principal;
 import java.util.List;
 
@@ -21,17 +20,16 @@ import java.util.List;
 @RequestMapping("/daylog")
 public class DayLogController {
 
-    DayLogRepository dayLogRepository;
-    FactorRepository factorRepository;
-    UserService userService;
-    CategoryRepository categoryRepository;
+    private DayLogRepository dayLogRepository;
+    private FactorRepository factorRepository;
+    private UserService userService;
 
-    public DayLogController(DayLogRepository dayLogRepository, FactorRepository factorRepository, UserService userService, CategoryRepository categoryRepository) {
+    public DayLogController(DayLogRepository dayLogRepository, FactorRepository factorRepository, UserService userService) {
         this.dayLogRepository = dayLogRepository;
         this.factorRepository = factorRepository;
         this.userService = userService;
-        this.categoryRepository = categoryRepository;
     }
+
 
     @GetMapping
     public String prepareAllLogs(Model model) {

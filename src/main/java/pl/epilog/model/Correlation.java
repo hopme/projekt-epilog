@@ -11,7 +11,7 @@ public class Correlation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     private Factor factor;
 
     @ManyToOne
