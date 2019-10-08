@@ -1,6 +1,7 @@
 package pl.epilog.model;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -19,6 +20,8 @@ public class User {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
+    @OneToMany
+    List<Correlation> correlations;
 
 
     @Override
@@ -83,5 +86,13 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public List<Correlation> getCorrelations() {
+        return correlations;
+    }
+
+    public void setCorrelations(List<Correlation> correlations) {
+        this.correlations = correlations;
     }
 }

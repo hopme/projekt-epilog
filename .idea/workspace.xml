@@ -7,10 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01f9e6f1-e3f7-4936-ae06-beef2847c585" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/model/Correlation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b8ced45-4b23-4108-a6ee-001f50a6bcb0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/dto/DayLogDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/dto/DayLogDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/model/Corelation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/model/Factor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/model/Factor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/DayLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/DayLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/services/CorelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/services/CorrelationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/services/UserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,30 +43,56 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="epilog@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="epilog@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Corelation.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/dto/DayLogDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="570">
+              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Category.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/CorrelationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="425">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Correlation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1051#1052#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/CorrelationRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+            <state relative-caret-position="405">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +113,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/CorelationService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="90">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/DayLogRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,11 +149,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Factor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,56 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/DayLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/DayLogRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/FactorRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/RegistrationService.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,20 +181,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log</find>
-      <find>isAtt</find>
-      <find>BAZ</find>
-      <find>break</find>
-      <find>---</find>
-      <find>DWA</find>
-      <find>UWAGA</find>
-      <find>UWAG</find>
-      <find>BYL ATA</find>
-      <find>RAZ</find>
-      <find>BYL A</find>
-      <find>BYL AT</find>
-      <find>ATAKFACTOR</find>
-      <find>PODSUMOWANIE</find>
+      <find>lody</find>
+      <find>Piwo</find>
+      <find>wska</find>
+      <find>Kawa</find>
+      <find>TYLE JES</find>
+      <find>wskaznik</find>
+      <find>czekola</find>
+      <find>noAttackno</find>
+      <find>TYLE JEST D</find>
+      <find>attackFactor</find>
+      <find>WIELKOSC</find>
+      <find>1. WI</find>
+      <find>2. WI</find>
+      <find>1. WIElKO</find>
+      <find>4. WIElKO</find>
+      <find>6. WIElKO</find>
+      <find>5</find>
+      <find>5. WIEL</find>
+      <find>WARTOSC FA</find>
+      <find>5. WIE</find>
+      <find>czekolada</find>
+      <find>6.</find>
+      <find>null</find>
+      <find>6. W</find>
+      <find>fajki</find>
+      <find>kawa</find>
+      <find>piwo</find>
+      <find>WARTOSC DLA FAKTORA</find>
+      <find>WARTOSC DLA FACTORA</find>
+      <find>put</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,13 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/config/SecurityInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/RegistrationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-new-log.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-new-factor.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ab252556-15c1-4d16-a626-4a22e26b2b1f/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ab252556-15c1-4d16-a626-4a22e26b2b1f/console_2.sql" />
@@ -241,16 +253,23 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/converters/FactorConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/dto/RegistrationFormDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/dto/DayLogDTO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-logs.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit-log.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/DayLogRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/CorelationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/Corelation.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/Factor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/dto/DayLogDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/dto/CorelationDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/Corelation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/CorelationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/CorrelationServiceBackup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/CorelationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/CorrelationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/Correlation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/CorrelationService.java" />
       </list>
     </option>
   </component>
@@ -445,8 +464,9 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570301677820" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570480544627" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -455,21 +475,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pl.epilog.dto" />
-      <recent name="pl.epilog.repositories" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pl.epilog.converters" />
-      <recent name="pl.epilog.model" />
-      <recent name="pl.epilog.repositories" />
-      <recent name="pl.epilog.services" />
-      <recent name="pl.epilog.controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/epilog/config" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.epilog.repositories" />
+      <recent name="pl.epilog.services" />
+      <recent name="pl.epilog.dto" />
+      <recent name="pl.epilog.converters" />
+      <recent name="pl.epilog.model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.epilog.dto" />
+      <recent name="pl.epilog.repositories" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -583,18 +603,18 @@
       <workItem from="1570087380047" duration="2586000" />
       <workItem from="1570112935861" duration="2872000" />
       <workItem from="1570267632452" duration="14752000" />
-      <workItem from="1570355277240" duration="20935000" />
+      <workItem from="1570355277240" duration="50220000" />
+      <workItem from="1570522284293" duration="1055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137546000" />
+    <option name="totallyTimeSpent" value="167886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.25849974" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.25849974" />
       <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.24986508" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -605,7 +625,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35281384" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38528138" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,7 +635,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.08008658" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
@@ -626,7 +646,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.27954668" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18294658" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -643,7 +663,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.478355" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52922076" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -653,7 +673,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.08008658" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
@@ -664,7 +684,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.28602266" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18294658" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -674,23 +694,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/CategoryService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/DayLogService.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.1.RELEASE/spring-data-jpa-1.11.1.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/FactorService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -743,20 +746,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0b8ced45-4b23-4108-a6ee-001f50a6bcb0/schema/epilog/table/factors">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0b8ced45-4b23-4108-a6ee-001f50a6bcb0/schema/epilog/table/daylogs_factors">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://0b8ced45-4b23-4108-a6ee-001f50a6bcb0/schema/epilog/table/factors" />
+    <entry file="das://0b8ced45-4b23-4108-a6ee-001f50a6bcb0/schema/epilog/table/daylogs_factors" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/converters/FactorConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -765,16 +756,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#545#546#0" expanded="true" />
             <element signature="e#587#588#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/dto/FactorDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -804,13 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="106" lean-forward="true" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -857,16 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
@@ -877,27 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="21" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/dto/DayLogDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -944,20 +891,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/DayLog.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="225">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/DayLogRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="782">
+          <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
+          <folding>
+            <element signature="e#2197#2198#0" expanded="true" />
+            <element signature="e#2261#2262#0" expanded="true" />
+            <element signature="e#2307#2308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/dto/FactorDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/dto/CorelationDTO.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/23069933-f670-44d3-a7cc-159690d873ae/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/CorrelationServiceBackup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="37" selection-start-column="2" selection-end-line="174" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/dto/DayLogDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/CorrelationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -966,28 +963,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+        <state relative-caret-position="405">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/CorelationService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="90">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/repositories/DayLogRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="165">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -997,19 +1001,44 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Factor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Corelation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/DayLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="105">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/services/CorrelationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Correlation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

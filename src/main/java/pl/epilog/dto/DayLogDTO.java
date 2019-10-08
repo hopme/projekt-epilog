@@ -56,13 +56,4 @@ public class DayLogDTO {
         this.user = user;
     }
 
-    @Override
-    public String toString() {
-        return "DayLogDTO{" +
-                ", factors=" + factors +
-                ", attack=" + attack +
-                ", created=" + created +
-                ", user=" + user +
-                '}';
-    }
 }

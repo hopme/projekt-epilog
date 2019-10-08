@@ -24,13 +24,13 @@ public class UserService {
     private FactorRepository factorRepository;
     private UserRepository userRepository;
     private DayLogRepository dayLogRepository;
-    private CorelationService corelationService;
+    private CorrelationService correlationService;
 
-    public UserService(FactorRepository factorRepository, UserRepository userRepository, DayLogRepository dayLogRepository, CorelationService corelationService) {
+    public UserService(FactorRepository factorRepository, UserRepository userRepository, DayLogRepository dayLogRepository, CorrelationService correlationService) {
         this.factorRepository = factorRepository;
         this.userRepository = userRepository;
         this.dayLogRepository = dayLogRepository;
-        this.corelationService = corelationService;
+        this.correlationService = correlationService;
     }
 
     public void addFactor(FactorDTO factorData) {
@@ -49,9 +49,7 @@ public class UserService {
         dayLog.setUser(user);
         dayLog.setAttack(daylogData.getAttack());
         dayLogRepository.save(dayLog);
-        System.out.println("-+-+");
-        System.out.println(user.toString());
-        corelationService.update(user);
+        correlationService.update(user);
     }
 
 

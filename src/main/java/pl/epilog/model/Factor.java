@@ -17,7 +17,7 @@ public class Factor {
     private String name;
 
     @OneToOne
-    private Corelation corelation;
+    private Correlation correlation;
     @ManyToOne
     private Category category;
     private LocalDateTime created;
