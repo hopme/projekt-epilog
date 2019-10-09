@@ -18,7 +18,10 @@ public class Correlation {
     private User user;
 
     private Double correlationMeasure;
+
     private LocalDateTime created;
+
+    private int tendency;
 
 
     public Factor getFactor() {
@@ -55,5 +58,13 @@ public class Correlation {
 
     public void setCreated(LocalDateTime created) {
         this.created = created;
+    }
+
+    public int getTendency() {
+        return tendency;
+    }
+
+    public void setTendency(int tendency) {
+        this.tendency = tendency;
     }
 }

@@ -24,16 +24,16 @@
       <c:forEach items="${daylogs}" var="daylog">
 
         <tr>
-            <td>${daylog.created}</td>
+            <td>${daylog.created.dayOfMonth} / ${daylog.created.monthValue} / ${daylog.created.year}  </td>
             <td>${daylog.attack}</td>
             <td>lista czynników dla danego dayloga</td>
             <%--<td>${daylog.factors}</td> JAK TO WYSWIETLIC??--%>
-            <td>Edycja</td>
+            <td><a href="/daylogs/edit-log/${daylog.id}">Edytuj</a><br/></td>
         </tr>
       </c:forEach>
 
 </table>
-<a href="http://localhost:8080/factors/add-factor">Link do dodania czynnika</a>
+<a href="http://localhost:8080/daylog/add-log">Link do dodania loga</a>
 
 <h2>Korelacje</h2>
 <p>Te wydarzenia najczęściej zdarzają się przy atakach</p>
@@ -43,6 +43,7 @@
         <th>Czynnik</th>
         <th>Kategoria</th>
         <th>Korelacja</th>
+        <th>Tendencja</th>
     </tr>
     <c:forEach items="${correlations}" var="correlation">
 
@@ -50,6 +51,7 @@
             <td>${correlation.factor.name}</td>
             <td>${correlation.factor.category.name}</td>
             <td>${correlation.correlationMeasure}</td>
+            <td>${correlation.tendency.toString()}</td>
         </tr>
     </c:forEach>
 

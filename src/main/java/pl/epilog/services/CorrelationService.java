@@ -28,12 +28,9 @@ public class CorrelationService {
         this.correlationRepository = correlationRepository;
     }
 
-
-
     public void update(User user) {
 
         List<DayLog> dayLogs = dayLogRepository.findAllByUser(user);
-
         List<Factor> allFactors = factorRepository.findAll();
 
         HashMap<Long, Integer> attackFactor = new HashMap<>();
@@ -42,7 +39,7 @@ public class CorrelationService {
         int totalNumberOfAttacks = 0;
 
         for (DayLog dayLog : dayLogs){
-
+//            Compile Attack Factor hashmap for User - by counting occurences when factor was present and attack happend (as marked in DayLogs)
             for (Factor factor : dayLog.getFactors()) {
                 if (dayLog.getAttack()) {
                     isFactorOnHashMap(attackFactor, factor);
@@ -52,7 +49,7 @@ public class CorrelationService {
                 }
             }
 
-           //number of all attacks
+//           Count number of all attacks for User
             if (dayLog.getAttack()) {
                 totalNumberOfAttacks++;
             }
@@ -61,7 +58,7 @@ public class CorrelationService {
 
         for (Factor f : allFactors) {
 
-            //Compile attacknoFactor hashmap - by counting occurences for each factor where it was not present when attack occured
+//            Compile attacknoFactor hashmap for User - by counting occurences for each factor where it was not present when attack occured
             int numberOfAttacksWithoutFactor;
             int numberOfAttacksWithFactor = 0;
 
@@ -69,9 +66,10 @@ public class CorrelationService {
                 numberOfAttacksWithFactor = attackFactor.get(f.getId());
             }
 
+//            Count number of Attack without Factor for User
             numberOfAttacksWithoutFactor = totalNumberOfAttacks - numberOfAttacksWithFactor;
 
-            //Compile noAttacknoFactor hashmap - by counting occurences where factor was not included
+//            Compile noAttacknoFactor hashmap for USer - by counting occurences where factor was not included
             int numberOfNoAttacknoFactor;
             int numberOfAllDaylogs = dayLogRepository.countAllByUser(user);
             int numberOfFactorsWithoutAttack = 0;
@@ -79,23 +77,48 @@ public class CorrelationService {
                 numberOfFactorsWithoutAttack = noAttackFactor.get(f.getId());
             }
 
+//            Count number of NoAttack NoFactor for User
             numberOfNoAttacknoFactor = numberOfAllDaylogs - numberOfAttacksWithFactor - numberOfAttacksWithoutFactor - numberOfFactorsWithoutAttack;
+
+//            Count correlationMeasure for User
+            System.out.println("TU SIE PATRZ");
+            System.out.println("11: " + numberOfAttacksWithFactor);
+            System.out.println("10: " + numberOfAttacksWithoutFactor);
+            System.out.println("01: " + numberOfFactorsWithoutAttack);
+            System.out.println("00: " + numberOfNoAttacknoFactor);
+
+
             Double correlationMeasure = phi(numberOfNoAttacknoFactor, numberOfFactorsWithoutAttack, numberOfAttacksWithoutFactor, numberOfAttacksWithFactor);
+            System.out.println("corelation = " + correlationMeasure);
+            System.out.println("wynik z rowniania = " + 0/2.5);
 
-            Correlation correlation = new Correlation();
-            correlation.setFactor(f);
-            correlation.setCorrelationMeasure(correlationMeasure);
-            correlation.setUser(user);
-            correlation.setCreated(LocalDateTime.now());
-
+//            Create new correlation for User
+            Correlation newCorrelation = new Correlation();
+            newCorrelation.setFactor(f);
+            if (correlationMeasure.isNaN()) {
+                 correlationMeasure = 0d;
+            }
+            newCorrelation.setCorrelationMeasure(correlationMeasure);
+            newCorrelation.setUser(user);
+            newCorrelation.setCreated(LocalDateTime.now());
 
             Correlation previousCorrelationItem = correlationRepository.findFirstByFactorIdAndUserId(f.getId(), user.getId());
-            deletePreviousCorrelation(user, previousCorrelationItem);
-            correlationRepository.save(correlation);
+
+            int tendency = 0;
+            if(previousCorrelationItem != null) {
+                tendency =  checkPreviousCorrelationTendency(previousCorrelationItem, newCorrelation);
+                deletePreviousCorrelation(previousCorrelationItem);
+            }
+
+            newCorrelation.setTendency(tendency);
+
+            correlationRepository.save(newCorrelation);
 
         }
 
     }
+
+
 
     private void isFactorOnHashMap(HashMap<Long, Integer> attackFactor, Factor factor) {
         if (attackFactor.containsKey(factor.getId())) {
@@ -107,18 +130,27 @@ public class CorrelationService {
     }
 
     private Double phi(Integer noAttackNoFactor, Integer noAttackFactor, Integer attackNoFactor, Integer attackFactor){
-
        return (attackFactor * noAttackNoFactor - attackNoFactor * noAttackFactor) /
-                Math.sqrt((noAttackFactor + attackFactor) *
+                Math.sqrt((attackNoFactor + attackFactor) *
                         (noAttackNoFactor + noAttackFactor) *
                         (noAttackFactor + attackFactor) *
                         (noAttackNoFactor + attackNoFactor));
-
     }
 
-    private void deletePreviousCorrelation(User user, Correlation previousCorrelation) {
+    private void deletePreviousCorrelation(Correlation previousCorrelation) {
         long previousCorrelationItemId = previousCorrelation.getId();
         correlationRepository.delete(previousCorrelationItemId);
     }
+
+    private int checkPreviousCorrelationTendency(Correlation previousCorrelationItem, Correlation newCorrelation) {
+        Double previousCorrelationItemMeasure = previousCorrelationItem.getCorrelationMeasure();
+        Double newCorrelationItemMeasure = newCorrelation.getCorrelationMeasure();
+        if (newCorrelationItemMeasure > previousCorrelationItemMeasure) {
+            return 1;
+        } else if (newCorrelationItemMeasure < previousCorrelationItemMeasure) {
+            return -1;
+        } else return 0;
+    }
+
 
 }
