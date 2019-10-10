@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import pl.epilog.dto.DayLogDTO;
 import pl.epilog.model.DayLog;
 import pl.epilog.model.Factor;
-import pl.epilog.repositories.CategoryRepository;
 import pl.epilog.repositories.DayLogRepository;
 import pl.epilog.repositories.FactorRepository;
 import pl.epilog.services.UserService;
