@@ -79,7 +79,7 @@ public class DayLogController {
             return "add-log";
         }
         userService.addDayLog(principal.getName(), dayLogData);
-        return "redirect:/";
+        return "redirect:/cockpit";
     }
 
 }

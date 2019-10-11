@@ -44,7 +44,7 @@
                 </div>
                 <div class="form-group">
                     <label>Czy tego dnia doszło do ataku?:</label>
-                    <form:checkbox class="form-control" path="attack"/>
+                    <form:checkbox path="attack"/>
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Dodaj">

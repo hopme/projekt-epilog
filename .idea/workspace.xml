@@ -8,27 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="01f9e6f1-e3f7-4936-ae06-beef2847c585" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/model/DayLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/model/DayLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/top-nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/top-nav.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-logs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-logs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/add-factor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/add-factor.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/cockpit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/cockpit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/fragments/top-nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/fragments/top-nav.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/show-factors.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/show-factors.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/show-logs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/WEB-INF/views/show-logs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/assets/css/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/epilog-1.0-SNAPSHOT/assets/css/bootstrap/bootstrap.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,80 +64,86 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="28" column="45" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="900">
+              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/header.jspf">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/footer.jspf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="285">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/top-nav.jspf">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+            <state relative-caret-position="201">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+            <state relative-caret-position="352">
+              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap/bootstrap.css">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="7954" column="1" selection-start-line="7954" selection-start-column="1" selection-end-line="7954" selection-end-column="1" />
+            <state relative-caret-position="795">
+              <caret line="53" selection-end-line="68" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/scripts.jspf">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="492" column="14" lean-forward="true" selection-start-line="434" selection-start-column="3" selection-end-line="492" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="70" selection-start-line="70" selection-end-line="77" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration2.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="38" column="34" lean-forward="true" selection-end-line="90" />
+            <state relative-caret-position="180">
+              <caret line="12" column="14" lean-forward="true" selection-end-line="56" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -193,8 +187,8 @@
       <find>Reje</find>
       <find>Rejestracj</find>
       <find>hover</find>
-      <find>/</find>
       <find>marcin ko</find>
+      <find>/</find>
       <find>kowal</find>
     </findStrings>
   </component>
@@ -204,9 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/TabacoFactor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/StressFactor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/Category.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8ced45-4b23-4108-a6ee-001f50a6bcb0/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/dto/FactorDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/converters/FactorConverter.java" />
@@ -227,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/CockpitService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/CategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/repositories/CorrelationRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/Correlation.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/services/CorrelationService.java" />
         <option value="$USER_HOME$/Desktop/startbootstrap-scrolling-nav-gh-pages/index.html" />
@@ -235,8 +225,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/footer.jspf" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/scripts.jspf" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/HomeController.java" />
@@ -245,16 +233,22 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/model/Factor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/CockpitController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-logs.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/header.jspf" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/top-nav.jspf" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/epilog/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java" />
       </list>
     </option>
   </component>
@@ -286,6 +280,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -439,15 +435,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570821403907" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570822138492" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
@@ -460,9 +454,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pl.epilog.dto" />
-      <recent name="pl.epilog.repositories" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
@@ -478,10 +473,9 @@
       <recent name="pl.epilog.converters" />
       <recent name="pl.epilog.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.epilog.dto" />
+      <recent name="pl.epilog.repositories" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -597,12 +591,13 @@
       <workItem from="1570267632452" duration="14752000" />
       <workItem from="1570355277240" duration="50220000" />
       <workItem from="1570522284293" duration="61471000" />
-      <workItem from="1570736115963" duration="12080000" />
+      <workItem from="1570736115963" duration="12910000" />
+      <workItem from="1570822454631" duration="5685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240382000" />
+    <option name="totallyTimeSpent" value="246897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -688,30 +683,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/config/SecurityInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/config/AppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.7.RELEASE/spring-security-config-4.2.7.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="866">
@@ -780,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/Cockpit.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit-log.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -843,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/footer.jspf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit2.jsp" />
     <entry file="file://$USER_HOME$/Desktop/landing/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -867,16 +824,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="32" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -926,27 +873,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="29" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/model/DayLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -981,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-logs.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -995,41 +919,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/header.jspf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/top-nav.jspf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="38" column="34" lean-forward="true" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration2.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/scripts.jspf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1058,6 +948,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/header.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/top-nav.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="795" column="1" selection-start-line="795" selection-start-column="1" selection-end-line="795" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1070,10 +981,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/footer.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="31" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-factors.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cockpit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-factor.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" lean-forward="true" selection-end-line="56" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-end-line="68" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-log.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/DayLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/epilog/controller/FactorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-6 text-center mb-5">
-                <h2>Kokpit</h2>
+                <h2 class="text-success">Kokpit</h2>
                 <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Użytkownika</strong></h5>
             </div>
         </div>
@@ -49,7 +49,7 @@
                 </c:forEach>
                 </tbody>
             </table>
-            <a href="<c:url value="/daylog/add-log"/>">Dodaj nowy DayLog</a>
+            <a class="btn btn-primary btn-lg btn-block pb_btn-pill btn-shadow-blue" href="<c:url value="/daylog/add-log"/>">Dodaj nowy daylog</a>
         </div>
     </div>
 </section>
@@ -58,7 +58,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-6 text-center mb-5">
-                <h2>Korelacje</h2>
+                <h2 class="text-success">Korelacje</h2>
                 <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Te wydarzenia najczęściej przydarzają się przy ataku</strong></h5>
             </div>
         </div>
@@ -76,8 +76,8 @@
                 <tbody>
                 <c:forEach items="${correlations}" var="correlation">
                     <tr>
-                        <td>${correlation.factor.name}</td>
-                        <td>${correlation.factor.category.name}</td>
+                        <td class="text-capitalize">${correlation.factor.name}</td>
+                        <td class="text-capitalize">${correlation.factor.category.name}</td>
                         <td>${correlation.correlationMeasure}</td>
                         <td>${correlation.tendency.toString()}</td>
                     </tr>

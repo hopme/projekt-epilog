@@ -1,6 +1,3 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
-
 <%--
   Created by IntelliJ IDEA.
   User: michal
@@ -8,29 +5,53 @@
   Time: 12:04
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 
-<h1>Dodaj nowy czynnik</h1>
+<%--HEADER--%>
+<%@ include file="/WEB-INF/views/fragments/header.jspf" %>
 
-<form:form method="post" modelAttribute="factorData">
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+<%--NAV--%>
+<%@ include file="/WEB-INF/views/fragments/top-nav.jspf" %>
+
+<section class="pb_section bg-light pb_pb-250" id="section-features">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+        </div>
+        <div class="row justify-content-center">
+
+            <form:form method="post" modelAttribute="factorData" class="bg-white rounded pb_form_v1">
+                <h2 class="mb-4 mt-0 text-center">Dodaj czynnik</h2>
+                <div class="form-group">
+                    <label>Wybierz kategorię:</label>
+                    <form:select class="form-control pb_Height-50 reverse" path="category.id" items="${categories}"  itemValue="id" itemLabel="name"/>
+                </div>
+                <div class="form-group">
+                    <label>Wpisz składnik diety (np. banan/kiełbasa/czekolada):</label>
+                    <form:input path="name" class="form-control pb_height-50 reverse" placeholder="Zdefiniuj zdarzenie"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Dodaj">
+                </div>
+            </form:form>
+
+        </div>
+    </div>
+</section>
 
 
-    <label>Kategoria</label>
-    <form:select path="category.id" items="${categories}"
-                 itemValue="id" itemLabel="name"/>
+<%--FOOTER--%>
+<%@ include file="/WEB-INF/views/fragments/footer.jspf" %>
 
-    <%--jesli category name = jedzenie--%>
-    <label>Wpisz składnik diety (np. banan/kiełbasa/czekolada):</label>
-    <form:input path="name"/>
-    <p>
-        <input type="submit" value="Dodaj"/>
-    </p>
-    </form:form>
+<!-- loader -->
+<div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff"/></svg></div>
+
+<%--SCRIPTS--%>
+<%@ include file="/WEB-INF/views/fragments/scripts.jspf" %>
 
 </body>
 </html>

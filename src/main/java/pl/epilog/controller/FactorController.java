@@ -56,7 +56,7 @@ public class FactorController {
         }
 
         userService.addFactor(factorData);
-        return "redirect:/";
+        return "redirect:/show-factors";
     }
 
 
