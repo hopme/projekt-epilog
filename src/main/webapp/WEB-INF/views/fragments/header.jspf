@@ -1,0 +1,24 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Epilog</title>
+
+    <link href="<c:url value="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"/>"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="<c:url value="/assets/css/bootstrap/bootstrap.css"/>" type="text/css"/>
+    <link rel="stylesheet" href="<c:url value="/assets/fonts/ionicons/css/ionicons.min.css"/>" type="text/css"/>
+    <link rel="stylesheet" href="<c:url value="/assets/fonts/fontawesome/css/font-awesome.min.css"/>" type="text/css"/>
+
+    <link rel="stylesheet" href="<c:url value="/assets/css/slick.css"/>" type="text/css"/>
+    <link rel="stylesheet" href="<c:url value="/assets/css/slick-theme.css"/>" type="text/css"/>
+
+    <link rel="stylesheet" href="<c:url value="/assets/css/helpers.css"/>" type="text/css"/>
+    <link rel="stylesheet" href="<c:url value="/assets/css/style.css"/>" type="text/css"/>
+    <link rel="stylesheet" href="<c:url value="/assets/css/landing-2.css"/>" type="text/css"/>
+
+</head>

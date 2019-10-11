@@ -9,23 +9,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Wszystkie czynniki</title>
 </head>
 <body>
 
 <table>
     <tr>
-        <th>Id</th>
-        <th>Nazwa</th>
-        <th>Kategoria</th>
         <th>Data utworzenia</th>
+        <th>Kategoria</th>
+        <th>Nazwa</th>
     </tr>
     <c:forEach items="${factors}" var="factor">
         <tr>
-            <td>${factor.id}</td>
+            <td>${factor.created.dayOfMonth} / ${factor.created.monthValue} / ${factor.created.year}  </td>
+            <td>${factor.category.name}</td>
             <td>${factor.name}</td>
-            <td>${factor.category}</td>
-            <td>${factor.created}</td>
         </tr>
     </c:forEach>
 

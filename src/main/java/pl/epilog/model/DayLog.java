@@ -18,6 +18,7 @@ public class DayLog {
 
 
     @Size(min = 1, message = "Musi być przynajmniej 1 factor")
+
     @ManyToMany
     @JoinTable(name = "daylogs_factors",
             joinColumns = @JoinColumn(name = "daylog_id"),

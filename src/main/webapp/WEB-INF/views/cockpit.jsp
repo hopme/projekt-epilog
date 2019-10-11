@@ -8,36 +8,20 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Epilog</title>
+<%--HEADER--%>
+<%@ include file="/WEB-INF/views/fragments/header.jspf" %>
 
-    <link href="<c:url value="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"/>"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="<c:url value="/assets/css/bootstrap/bootstrap.css"/>" type="text/css"/>
-    <link rel="stylesheet" href="<c:url value="/assets/fonts/ionicons/css/ionicons.min.css"/>" type="text/css"/>
-    <link rel="stylesheet" href="<c:url value="/assets/fonts/fontawesome/css/font-awesome.min.css"/>" type="text/css"/>
-
-    <link rel="stylesheet" href="<c:url value="/assets/css/slick.css"/>" type="text/css"/>
-    <link rel="stylesheet" href="<c:url value="/assets/css/slick-theme.css"/>" type="text/css"/>
-
-    <link rel="stylesheet" href="<c:url value="/assets/css/helpers.css"/>" type="text/css"/>
-    <link rel="stylesheet" href="<c:url value="/assets/css/style.css"/>" type="text/css"/>
-    <link rel="stylesheet" href="<c:url value="/assets/css/landing-2.css"/>" type="text/css"/>
-
-</head>
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
+<%--NAV--%>
 <%@ include file="/WEB-INF/views/fragments/top-nav.jspf" %>
 
 <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-features">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-6 text-center mb-5">
-                <h2 class="pb_text-green">Kokpit</h2>
+                <h2>Kokpit</h2>
                 <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Użytkownika</strong></h5>
             </div>
         </div>
@@ -55,12 +39,12 @@
                 </thead>
                 <tbody>
                 <c:forEach items="${daylogs}" var="daylog">
-                    <tr>
+                    <tr class="${daylog.attack ? 'bg-danger text-light' : ''}">
                         <td>${daylog.created.dayOfMonth} / ${daylog.created.monthValue} / ${daylog.created.year}  </td>
                         <td>${daylog.attack}</td>
                         <td>lista czynników dla danego dayloga</td>
                             <%--<td>${daylog.factors}</td> JAK TO WYSWIETLIC??--%>
-                        <td><a href="/daylogs/edit-log/${daylog.id}">Edytuj</a><br/></td>
+                        <td><a href="/daylogs/edit-log/${daylog.id}" class="${daylog.attack ? 'text-light' : ''}">Edytuj</a><br/></td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -74,7 +58,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-6 text-center mb-5">
-                <h2 class="pb_text-green">Korelacje</h2>
+                <h2>Korelacje</h2>
                 <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Te wydarzenia najczęściej przydarzają się przy ataku</strong></h5>
             </div>
         </div>
@@ -103,13 +87,14 @@
         </div>
     </div>
 </section>
-<!-- END section -->
 
+<%--FOOTER--%>
 <%@ include file="/WEB-INF/views/fragments/footer.jspf" %>
 
 <!-- loader -->
 <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff"/></svg></div>
 
+<%--SCRIPTS--%>
 <%@ include file="/WEB-INF/views/fragments/scripts.jspf" %>
 
 </body>

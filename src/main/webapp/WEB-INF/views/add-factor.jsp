@@ -25,12 +25,12 @@
                  itemValue="id" itemLabel="name"/>
 
     <%--jesli category name = jedzenie--%>
-    <label>Wpisz składnik diety (np. ziemniaki/kiełbasa/czekolada):</label>
+    <label>Wpisz składnik diety (np. banan/kiełbasa/czekolada):</label>
     <form:input path="name"/>
     <p>
         <input type="submit" value="Dodaj"/>
     </p>
-</form:form>
+    </form:form>
 
 </body>
 </html>

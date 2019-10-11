@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Wszystkie Daylogi</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
     </tr>
     <c:forEach items="${daylogs}" var="daylog">
         <tr>
-            <td>${daylog.created}</td>
+            <td>${daylog.created.dayOfMonth} / ${daylog.created.monthValue} / ${daylog.created.year}  </td>
             <td>${daylog.attack}</td>
              <td>Edycja loga</td>
             <td><a href="/daylogs/edit-log/${daylog.id}">Edytuj</a><br/>
