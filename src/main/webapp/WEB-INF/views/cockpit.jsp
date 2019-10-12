@@ -43,8 +43,9 @@
                         <td>${daylog.created.dayOfMonth} / ${daylog.created.monthValue} / ${daylog.created.year}  </td>
                         <td>${daylog.attack}</td>
                         <td>lista czynników dla danego dayloga</td>
-                            <%--<td>${daylog.factors}</td> JAK TO WYSWIETLIC??--%>
-                        <td><a href="/daylogs/edit-log/${daylog.id}" class="${daylog.attack ? 'text-light' : ''}">Edytuj</a><br/></td>
+                            <%--&lt;%&ndash;<td>${daylog.factors}</td> zmienic na DTO i wtedy sie bedzie wyswietlac--%>
+                        <td><a href="/daylogs/edit-log/${daylog.id}" class="${daylog.attack ? 'text-light' : ''}">Edytuj</a>
+                            <a href="/daylogs/edit-log/${daylog.id}" class="${daylog.attack ? 'text-light' : ''}">Usuń</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>

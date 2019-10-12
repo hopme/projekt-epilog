@@ -41,8 +41,8 @@
                 <c:forEach items="${factors}" var="factor">
                     <tr>
                         <td>${factor.created.dayOfMonth} / ${factor.created.monthValue} / ${factor.created.year}  </td>
-                        <td class="text-capitalize">${factor.category.name}</td>
-                        <td class="text-capitalize">${factor.name}</td>
+                        <td>${factor.category.name}</td>
+                        <td>${factor.name}</td>
                         <td><a href="/factors/edit-factor/${factor.id}">Edytuj</a><br/>
                             <a href="/factors/delete-factor/${factor.id}">Usuń</a></td>
                     </tr>

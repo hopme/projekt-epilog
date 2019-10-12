@@ -24,7 +24,7 @@ public class DayLog {
             joinColumns = @JoinColumn(name = "daylog_id"),
             inverseJoinColumns = @JoinColumn(name = "factor_id")
     )
-    private List<Factor> factors = new ArrayList<>(); //alko + papierosy
+    private List<Factor> factors = new ArrayList<>();
     private boolean attack;
     private LocalDateTime created;
     @ManyToOne(optional = false)
